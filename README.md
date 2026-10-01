@@ -3,7 +3,7 @@
 Halaman profil pribadi ala LinkedIn, dibuat menggunakan HTML5 semantik.
 
 ## Live Demo
-https://username-kamu.github.io/NIM_Nama_ProfilCV/
+https://HanreHan8.github.io/00190_Raihan_ProfilCV/
 
 ## Teknologi
 - HTML5

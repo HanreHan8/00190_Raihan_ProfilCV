@@ -1,0 +1,63 @@
+:root{
+    /* warna */
+    --bg        : #f4f6fb;
+    --surface   : #ffffff;
+    --text      : #1f2937;
+    --muted     : #6b7280;
+    --accent    : #1d4ed8;
+    --accent-soft:#dbeafe;
+    --on-accent : #ffffff;
+    --border    : #e5e7eb;
+    
+    /*spasi*/
+    --space-s: 8px;
+    --space-m: 16px;
+    --space-l: 24px;
+
+    /*bentuk dan huruf */
+    --radius: 12px;
+    --font: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: var(--font);
+            font-size: 1rem;
+            line-height: 1.0;
+            color: var(--text)
+
+        }
+        #header {
+            background-color:brown;
+            color:aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding:10px;
+        }
+        nav {
+            position: sticky;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+            padding: var(--space-s)0;
+        }
+         .daftar-isi{
+                background-color: rgb(111, 111, 243);
+                color: brown;
+                display: grid;
+                text-align: center;
+                
+        }
+         .kartu{
+                background-color: aliceblue;
+                border: 1px solid rgb(red green blue / alpha);
+                border-radius: 12px;
+                padding: 24px;
+                margin: 12px 12px;
+        }
+        footer{
+            text-align: center;
+        }

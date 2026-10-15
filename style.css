@@ -4,7 +4,7 @@
     --surface   : #ffffff;
     --text      : #1f2937;
     --muted     : #6b7280;
-    --accent    : #782007;
+    --accent    : #83240a;
     --accent-soft:#dbeafe;
     --on-accent : #ffffff;
     --border    : #e5e7eb;
@@ -48,7 +48,7 @@
             font-size: 2rem;
         }
         header p {
-            margin: o;
+            margin: 0;
             opacity: 0.9;
         }
         nav{
@@ -114,8 +114,8 @@
             }
             #keahlian {
                 list-style: none;
-                margin:var(--space-m) ;
-                padding: 20px;    
+                margin-bottom: var(--space-m);
+                padding: 30px;    
             }
             #keahlian li{
                 display: inline-block;

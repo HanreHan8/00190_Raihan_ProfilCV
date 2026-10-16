@@ -7,6 +7,8 @@ https://HanreHan8.github.io/00190_Raihan_ProfilCV/
 
 ## Teknologi
 - HTML5
+- Style CSS
+- Tailwind HTML
 
 ## Cara Membuka
 Buka file `index.html` langsung di browser, atau kunjungi link live di atas.

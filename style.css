@@ -52,6 +52,7 @@
             opacity: 0.9;
         }
         nav{
+            position: sticky;
             background: var(--surface);
             border-bottom: 1px solid var(--border);
             text-align: center;
@@ -156,7 +157,7 @@
             padding: var(--space-l) var(--space-m);
         }
 
-            
+    
 
         
 

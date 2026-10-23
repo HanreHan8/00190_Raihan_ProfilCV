@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minggu 6 - JavaScript</title>
+    <script src="js/script.js"></script>
+    <style>
+        .red{
+            color: brown;
+        }
 
+        @keyframes goyang {
+            from {transform: rotate(2deg);}
+            to {transform: rotate(4deg);}
+        }
+    </style>
+   
+</head>
+<body>
+    <h1 id="judul">Coba JavaScript</h1>
+    <button id="tombol-ubah">Ubah</button>
     <script>
         let nama = "Raihan Rizqy Sinatriya";
         const umur = 19;
 
         console.log("nama: " + nama);
         console.log(`umur saya Adalah ${umur}`);
+        
+        const judul = document.getElementById("judul");
+      
+        
+        const tombol = document.getElementById("tombol-ubah");
 
+        tombol.addEventListener("click", ()=> {
+            if (judul.classList.contains("red")){
+              judul.innerText = `${nama} bosskuu`;
+              judul.classList.add("red");  
+              tombol.innerText = "balikin";
+            }else {
+                     judul.innerText = "Jefta Tulungagung";
+                     judul.classList.add("red");
+                     tombol.innerText = "Ganti ke rehan"; 
+            }
+        });
     </script>
-</head>
-<body>
-    <h1>Coba JavaScript</h1>
-    <button>ubah</button>
 </body>
 </html>

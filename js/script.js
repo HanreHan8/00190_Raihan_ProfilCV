@@ -13,12 +13,26 @@ console.log(typeof profil.nama, typeof profil.semester);
 const keahlian = [
     {nama: "HTML5", level: "Mahir"},
     {nama: "CSS3", level: "Mahir" },
-    {nama: "Tailwind CSS", level: "Hampir jago"},
-    {nama: "JavaScript", level:"Hampir jago"},
+    {nama: "Tailwind CSS", level: " jago"},
+    {nama: "JavaScript", level:" jago"},
     {nama: "Music", level:"Mahir"},
 ];
 console.log(`jumlah keahlian: ${keahlian.length}`);
 
-for (const skill of keahlian) {
-    console.log(`${skill.nama} (${skill.level})`);
+const daftarSkill = document.getElementById("daftar-skill");
+
+const buatPil= (skill) => {
+    const li = document.createElement("li");
+    li.textContent = skill.nama;
+    li.className = "text-sm font-semibold px-3 py-1 rounded-full text-center";
+
+    if (skill.level == "Mahir") {
+        li.classList.add("bg-green-400", "text-red");
+    }else {
+        li.classList.add("bg-blue-300", "text-red");
+    }
+    return li;
 };
+    for (const skill of keahlian) {
+        daftarSkill.append(buatPil(skill));
+    }

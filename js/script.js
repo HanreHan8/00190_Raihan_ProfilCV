@@ -44,5 +44,15 @@ const toggleMenu = () => {
   menuNav.classList.toggle("hidden");
   menuNav.classList.toggle("flex");
 };
-
 tombolMenu.addEventListener("click", toggleMenu);
+
+const tutupMenu = () => {
+  menuNav.classList.add("hidden");
+  menuNav.classList.remove("flex");
+};
+
+const linkMenu = document.querySelectorAll("#menu-nav a");
+
+for (const link of linkMenu) {
+  link.addEventListener("click", tutupMenu);
+}

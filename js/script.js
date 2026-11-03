@@ -56,3 +56,17 @@ const linkMenu = document.querySelectorAll("#menu-nav a");
 for (const link of linkMenu) {
   link.addEventListener("click", tutupMenu);
 }
+
+const tombolPendidikan = document.querySelector("#tombol-pendidikan");
+const isiPendidikan = document.querySelector("#isi-pendidikan");
+const ikonPendidikan = document.querySelector("#ikon-pendidikan");
+
+tombolPendidikan.addEventListener("click", () => {
+  isiPendidikan.classList.toggle("hidden");
+
+  if (isiPendidikan.classList.contains("hidden")) {
+    ikonPendidikan.textContent = "▸";
+  } else {
+    ikonPendidikan.textContent = "▾";
+  }
+});

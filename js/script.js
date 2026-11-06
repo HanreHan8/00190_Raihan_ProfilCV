@@ -53,10 +53,6 @@ const tutupMenu = () => {
 
 const linkMenu = document.querySelectorAll("#menu-nav a");
 
-for (const link of linkMenu) {
-  link.addEventListener("click", tutupMenu);
-}
-
 const tombolPendidikan = document.querySelector("#tombol-pendidikan");
 const isiPendidikan = document.querySelector("#isi-pendidikan");
 const ikonPendidikan = document.querySelector("#ikon-pendidikan");
@@ -68,5 +64,17 @@ tombolPendidikan.addEventListener("click", () => {
     ikonPendidikan.textContent = "▸";
   } else {
     ikonPendidikan.textContent = "▾";
+  }
+});
+
+const tombolTema = document.querySelector("#tombol-tema");
+
+tombolTema.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+
+  if (document.documentElement.classList.contains("dark")) {
+    tombolTema.textContent = "☀️ Mode terang";
+  } else {
+    tombolTema.textContent = "🌙 Mode gelap";
   }
 });
